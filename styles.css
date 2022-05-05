@@ -212,6 +212,17 @@ body {
     color: #1f2937;
 }
 
+
+/* FOOTER */
+footer {
+    background-color: #1f2937;
+    color: #FFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2em 0;
+}
+
 @media screen and (max-width:620px) {
 
     .header .left-logo{
