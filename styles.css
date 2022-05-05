@@ -7,11 +7,12 @@ body {
     -moz-osx-font-smoothing: grayscale;
   }
 
-a{
+.right-links a{
     text-decoration: none;
     color: #e5e7ebc0;
 }
 
+/* Header-Stylings*/
 
 .header{
     background-color: rgb(31, 41, 55,0.75);
@@ -47,24 +48,19 @@ a{
     color: #F9FAF8;
 }
 
-/* WELCOME */
-
-.secondary {
-    font-size: 18px;
-    color: #E5E7EB;
-    text-decoration: none;
-}
+/* Hero Stylings */
 
 .welcome {
     padding: 7em 0;
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 2em;
     background-color: var(--overlay);
     flex: 1;
     position: relative;
     margin: auto;
+    width: 100%;
+    height: 100%;
 }
 
 .welcome:before {
@@ -72,29 +68,39 @@ a{
     background: url('./images/hero_brezel.jpg') no-repeat center center/cover;
     height: 100%;
     width: 100%;
-    opacity: 0.8;
+    opacity: 0.95;
     position: absolute;
     top: 0;
     left: 0;
     z-index: -1;
 }
 
+.container {
+    display: grid;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+
 .welcome .left {
     display: flex;
     flex-direction: column;
-    gap: 10px;
 }
 
-.welcome .right {
-    flex-shrink: 0;
-    width: 50%;
-
-}
-
-.hero {
+.welcome .left .bigtext {
     color: #F9FAF8;
     font-weight: 900;
-    font-size: 48px;
+    font-size: 42px;
+    grid-column: 1
+}
+
+.text {
+    font-size: 18px;
+    color: #ffffff;
+    text-decoration: none;
+    grid-column: 1;
+    width: 70%;
+    font-weight: 700;
 }
 
 .welcome .left .button {
@@ -103,85 +109,30 @@ a{
     background-color: rgb(31, 41, 55,0.6);
     border-radius: 50px;
     border: none;
-    color: #F9FAF8;
+    color: #e5e7ebc0;
     font-size: 18px;
+    grid-column: 1;
+    text-decoration: none;
 }
 
 .welcome .left .button a:hover{
     color: #F9FAF8;
 }
 
+.welcome .right {
+    grid-column: 2;
+    align-items: center;
+}
 
 .image {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 320px;
-    width: auto;
-    border-radius: 50px;
+    height:auto;
+    width: 392px;
+    border-radius: 15px;
 }
 
-
-/* .hero {
-    background-color: var(--overlay);
-    color: #fff;
-    height: 100vh;
-    width: 100%;
-    position: relative;
-    flex: 1;
-} */
-
-/* .hero:before {
-    content: '';
-    background: url('./images/hero_brezel.jpg') no-repeat center center/cover;
-    height: 100%;
-    width: 100%;
-    opacity: 0.8;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: -1;
-}
-
-.hero .content {
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    max-width: 1100px;
-    margin: auto;
-    padding: 2rem;
-    text-align: center;
-
-}
-
-.container {
-    display: grid;
-}
-
-.container-header {
-    font-size: 48px;
-    color: #F9FAF8;
-    font-weight: 900;
-    grid-column: 1;
-    margin: auto;
-}
-
-.container-text {
-    font-size: 28px;
-    color: #F9FAF8;
-    font-weight: 700;
-    grid-column: 1;
-    margin: auto;
-}
-
-.container-img {
-    grid-column: 2;
-    width: 360px;
-    height: auto;
-    border-radius: 50px;
-    margin:auto
-} */
 
 @media screen and (max-width:620px) {
 
@@ -197,5 +148,18 @@ a{
 
     .header .left-logo img {
         width: 120px;
+    }
+
+    .welcome .container .left .bigtext{
+        font-size: 24px;
+    }
+
+    .text {
+        font-size: 12px;
+    }
+
+    .image{
+        width: 240px;
+        height: auto;
     }
 }
