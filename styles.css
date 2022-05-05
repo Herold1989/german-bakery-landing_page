@@ -12,6 +12,7 @@ body {
     color: #e5e7ebc0;
 }
 
+
 /* Header-Stylings*/
 
 .header{
@@ -42,6 +43,7 @@ body {
     color: #e5e7ebc0;
     font-size: 18px;
     padding-right: 1rem;    
+    font-weight: 500;
 }
 
 .header .right-links a:hover{
@@ -50,7 +52,7 @@ body {
 
 /* Hero Stylings */
 
-.welcome {
+.hero {
     padding: 7em 0;
     display: flex;
     justify-content: center;
@@ -63,7 +65,7 @@ body {
     height: 100%;
 }
 
-.welcome:before {
+.hero:before {
     content: '';
     background: url('./images/hero_brezel.jpg') no-repeat center center/cover;
     height: 100%;
@@ -82,12 +84,12 @@ body {
 }
 
 
-.welcome .left {
+.hero .left {
     display: flex;
     flex-direction: column;
 }
 
-.welcome .left .bigtext {
+.hero .left .bigtext {
     color: #F9FAF8;
     font-weight: 900;
     font-size: 42px;
@@ -103,23 +105,24 @@ body {
     font-weight: 700;
 }
 
-.welcome .left .button {
-    padding: 7px 1em;
+
+.hero .container .left a{
+    text-decoration: none;
+    color: #e5e7ebc0;
     width: 130px;
     background-color: rgb(31, 41, 55,0.6);
     border-radius: 50px;
-    border: none;
-    color: #e5e7ebc0;
+    padding: 0.7rem;
+    text-align: center;
     font-size: 18px;
-    grid-column: 1;
-    text-decoration: none;
+    font-weight: 700;
 }
 
-.welcome .left .button a:hover{
-    color: #F9FAF8;
+.hero .container .left a:hover{
+    color: #ffffff;
 }
 
-.welcome .right {
+.hero .right {
     grid-column: 2;
     align-items: center;
 }
@@ -150,7 +153,7 @@ body {
         width: 120px;
     }
 
-    .welcome .container .left .bigtext{
+    .hero .container .left .bigtext{
         font-size: 24px;
     }
 
