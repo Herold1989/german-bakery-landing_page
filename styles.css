@@ -209,7 +209,7 @@ body {
 .quote em {
     font-size: 36px;
     font-weight: 100;
-    color: #1f2937;
+    color: rgb(47, 50, 55,0.7);
 }
 
 /* SIGN UP */
@@ -224,7 +224,7 @@ body {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    background-color: #363738;
+    background-color: rgb(59, 59, 59,0.6);
     padding: 3em;
     width: 100%;
     border-radius: 10px;
@@ -331,6 +331,17 @@ footer {
 
     .quote {
         padding: 1em 3em;
+    }
+
+    .signup {
+        padding: 2rem 4rem;
+    }
+
+    .signup .container .right a{
+        margin: auto;        
+        font-size: 10px;
+        font-weight: 500;
+        display: block;
     }
 
 }
