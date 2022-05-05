@@ -139,6 +139,31 @@ body {
 }
 
 
+/* Products styling */
+
+.products{
+    display: flex;
+    background-color: hsla(0, 0%, 100%, 0.8);
+}
+
+.products h1{
+    font-size: 48px;
+    color: #000000;
+    margin: auto;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.productwrapper {
+    display: flex;
+}
+
+.productcontainer {
+    padding: 10px 20px;
+}
+
+
+
 @media screen and (max-width:620px) {
 
     .header .left-logo{
@@ -176,4 +201,13 @@ body {
         width: 240px;
         height: auto;
     }
+
+    .products h1{
+        font-size: 24px;
+    }
+
+    .productcontainer {
+        font-size: 14px;
+    }
+
 }
