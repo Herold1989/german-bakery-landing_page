@@ -14,7 +14,7 @@ a{
 
 
 .header{
-    background-color: rgb(31, 41, 55,0.3);
+    background-color: rgb(31, 41, 55,0.75);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -62,6 +62,7 @@ a{
     background: url('./images/hero_brezel.jpg') no-repeat center center/cover;
     height: 100%;
     width: 100%;
+    opacity: 0.8;
     position: absolute;
     top: 0;
     left: 0;
@@ -76,11 +77,39 @@ a{
     max-width: 1100px;
     margin: auto;
     padding: 2rem;
-    font-size: 48px;
+    text-align: center;
+
 }
 
+.container {
+    display: grid;
+}
 
-@media screen and (max-width:940px) {
+.container-header {
+    font-size: 48px;
+    color: #F9FAF8;
+    font-weight: 900;
+    grid-column: 1;
+    margin: auto;
+}
+
+.container-text {
+    font-size: 28px;
+    color: #F9FAF8;
+    font-weight: 700;
+    grid-column: 1;
+    margin: auto;
+}
+
+.container-img {
+    grid-column: 2;
+    width: 360px;
+    height: auto;
+    border-radius: 50px;
+    margin:auto
+}
+
+@media screen and (max-width:620px) {
 
     .header .left-logo{
         font-size: 18px;
