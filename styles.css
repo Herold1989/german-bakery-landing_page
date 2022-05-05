@@ -212,6 +212,48 @@ body {
     color: #1f2937;
 }
 
+/* SIGN UP */
+.signup {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5em 13em;
+}
+
+.signup .container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #363738;
+    padding: 3em;
+    width: 100%;
+    border-radius: 10px;
+}
+
+.signup .container {
+    color: #ffffff;
+}
+.signup .container .right a{
+    text-decoration: none;
+    color: #e5e7ebc0;
+    width: 130px;
+    background-color: rgb(31, 41, 55,0.6);
+    border-radius: 50px;
+    padding: 0.7rem;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.signup .container .right a:hover{
+    color: #ffffff;
+}
+
+
+strong {
+    font-size: 24px;
+    color: #FFF;
+}
 
 /* FOOTER */
 footer {
