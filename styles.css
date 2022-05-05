@@ -79,21 +79,23 @@ body {
 
 .container {
     display: grid;
-    padding-left: 1rem;
-    padding-right: 1rem;
+    padding: 2rem 
 }
 
 
 .hero .left {
     display: flex;
     flex-direction: column;
+    align-items: left;
+    flex-wrap: wrap;
+    align-content: center;
 }
 
 .hero .left .bigtext {
     color: #F9FAF8;
     font-weight: 900;
     font-size: 42px;
-    grid-column: 1
+    grid-column: 1;
 }
 
 .text {
@@ -153,12 +155,21 @@ body {
         width: 120px;
     }
 
+    .container {
+        padding: 1rem 
+    }
+
     .hero .container .left .bigtext{
         font-size: 24px;
     }
 
     .text {
         font-size: 12px;
+    }
+
+    .hero .container .left a{
+        font-size: 12px;
+        width: 90px;
     }
 
     .image{
